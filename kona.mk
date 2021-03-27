@@ -81,7 +81,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Gcam
+    CameraGo
 
 # Cryptfs
 PRODUCT_PACKAGES += \
