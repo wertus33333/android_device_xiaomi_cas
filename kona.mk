@@ -17,6 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -48,7 +49,7 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 TARGET_BOARD_PLATFORM := kona
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-arrow
+    $(LOCAL_PATH)/overlay-aosp
 
 # A/B
 AB_OTA_UPDATER := false
@@ -77,15 +78,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
-    
-# Camera
-#ifeq ($(ARROW_GAPPS), true)
-#PRODUCT_PACKAGES += \
-#    GCamGOPrebuilt
-#else
-#PRODUCT_PACKAGES += \
-#    Snap
-#endif
 
 # Camera
 PRODUCT_PACKAGES += \
