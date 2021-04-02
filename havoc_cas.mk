@@ -17,11 +17,11 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/cas/kona.mk)
 
-# Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Override build properties
-PRODUCT_NAME := dot_cas
+PRODUCT_NAME := havoc_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC

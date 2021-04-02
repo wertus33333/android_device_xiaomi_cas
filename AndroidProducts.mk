@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_cas.mk
+    $(LOCAL_DIR)/havoc_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_cas-user \
-    dot_cas-userdebug \
-    dot_cas-eng
+    havoc_cas-user \
+    havoc_cas-userdebug \
+    havoc_cas-eng
