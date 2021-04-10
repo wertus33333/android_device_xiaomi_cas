@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cas.mk
+    $(LOCAL_DIR)/evolution_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cas-user \
-    aosp_cas-userdebug \
-    aosp_cas-eng
+    evolution_cas-user \
+    evolution_cas-userdebug \
+    evolution_cas-eng

@@ -17,11 +17,11 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/cas/kona.mk)
 
-# Inherit some common Aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Evolution-X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Override build properties
-PRODUCT_NAME := aosp_cas
+PRODUCT_NAME := evolution_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
