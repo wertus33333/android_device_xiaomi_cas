@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cas.mk
+    $(LOCAL_DIR)/revengeos_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cas-user \
-    arrow_cas-userdebug \
-    arrow_cas-eng
+    revengeos_cas-user \
+    revengeos_cas-userdebug \
+    revengeos_cas-eng
